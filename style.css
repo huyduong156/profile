@@ -41,7 +41,8 @@ section{
 .about .about-content,
 .skills-1 .skills-1-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.certificate .diploma{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -61,7 +62,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 280px;
+    width: 400px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
@@ -383,6 +384,12 @@ section .title::after{
 .skills-content .right .Responsive::before{
     width: 75%;
 }
+.skills-content .right .english::before{
+    width: 40%;
+}
+.skills-content .right .japanese::before{
+    width: 30%;
+}
 
 /* experience section styling */
 .experience .title::after{
@@ -464,6 +471,34 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
+
+/*certificate section styling */
+.certificate .title::after{
+    content: "Cao đẳng công nghệ thông tin";
+}
+.certificate .diploma .left{
+    width: 50%;
+}
+.certificate .diploma .right{
+    width: 50%;
+}
+.certificate .diploma .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.certificate .diploma img{
+    height: 400px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.certificate .diploma .right img{
+    float: right;
+}
+
 
 /* contact section styling */
 .contact .title::after{
@@ -582,6 +617,10 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
+    .certificate .diploma img{
+        height: 350px;
+        width: 400px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -651,6 +690,17 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .certificate .diploma .column{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .certificate .diploma .certificate_img{
+        display: flex;
+        justify-content: center;
+    }
+    .certificate .diploma img{
+        width: 450px;
     }
 }
 
